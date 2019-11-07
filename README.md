@@ -14,7 +14,7 @@ onehot本质上属于词典模型，最终一句话的向量维数是词袋中�
 
 然后，用one-hot对每句话提取特征向量：
 
-![onehot](datas/ssss.png)
+![onehot](https://github.com/opprash/braveRL/blob/master/datas/ssss.png)
 
 所以最终得到的每句话的特征向量就是：
 
