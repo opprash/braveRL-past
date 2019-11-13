@@ -54,8 +54,8 @@ TF-IDF（term frequency–inverse document frequency，词频-逆向文件频率
 ![CBOW](https://github.com/opprash/braveRL/blob/master/datas/CBOW.png)
 2. 根据当前词来预测上下文
 * 可以通过“我”来预测“今天”，“下午”,"不"，“上班”这几个字，这中模型称为skim_gram，skim-gram模型同样包含三层：输入层,映射层和输出层.Skip-Gram模型中的w(t)为输入词,在已知词w(t)的前提下预测词w(t)的上下文w(t-2),w(t-1),w(t+1),w(t+2),条件概率写成：p(context(w)|w)  
-![skip-gram](https://github.com/opprash/braveRL/blob/master/datas/skip_gram.png)
-<<<<<<< HEAD
+![skip-gram](https://github.com/opprash/braveRL/blob/master/datas/skip_gram.png)  
+
 ## infersent
 整体的架构如图：  
 ![infersent](https://github.com/opprash/braveRL/blob/master/datas/infersent.png)  
