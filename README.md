@@ -45,8 +45,8 @@ TF-IDF（term frequency–inverse document frequency，词频-逆向文件频率
 （4）文本摘要  
 ## word2vec
 要理解word2vec原理先来看张图：    
-![word2vec](https://github.com/opprash/braveRL/blob/master/datas/word2vec.png) 
- 以上就是word2vec的结构，首先将词向量进行一次嵌入然后根据这个嵌入向量去获得目标。   
+![word2vec](https://github.com/opprash/braveRL/blob/master/datas/word2vec.png)   
+以上就是word2vec的结构，首先将词向量进行一次嵌入然后根据这个嵌入向量去获得目标。   
 假如有一句话：今天 下午 我 不 上班
 1. 根据上下文预测目标单词：
 * 要预测“我”这个目标单词，可以通过上文的”今天“，”下午“来预测同时也可以使用下文的“不” ，”上班“两个单词来预测，一般将上下文一起结合起来预测比较好因为这样结合了上下文的语境。
