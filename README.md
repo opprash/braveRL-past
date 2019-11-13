@@ -44,20 +44,14 @@ TF-IDF（term frequency–inverse document frequency，词频-逆向文件频率
 （3）文本相似性  
 （4）文本摘要  
 ## word2vec
-###原理
-先来看张图    
-![word2vec](https://github.com/opprash/braveRL/blob/master/datas/word2vec.png)
-  
- 以上就是word2vec的结构，首先将词向量进行一次嵌入然后根据这个嵌入向量去获得目标。
-   
+要理解word2vec原理先来看张图：    
+![word2vec](https://github.com/opprash/braveRL/blob/master/datas/word2vec.png) 
+ 以上就是word2vec的结构，首先将词向量进行一次嵌入然后根据这个嵌入向量去获得目标。   
 假如有一句话：今天 下午 我 不 上班
 1. 根据上下文预测目标单词：
 * 要预测“我”这个目标单词，可以通过上文的”今天“，”下午“来预测同时也可以使用下文的“不” ，”上班“两个单词来预测，一般将上下文一起结合起来预测比较好因为这样结合了上下文的语境。
 这种模型称为CBOW，模型包含三层：输入层,映射层和输出层.CBOW模型中的w(t)为目标词,在已知它的上下文w(t-2),w(t-1),w(t+1),w(t+2)的前提下预测词w(t)出现的概率,即：p(w/context(w))目标函数为：  
 ![CBOW](https://github.com/opprash/braveRL/blob/master/datas/CBOW.png)
-
 2. 根据当前词来预测上下文
 * 可以通过“我”来预测“今天”，“下午”,"不"，“上班”这几个字，这中模型称为skim_gram，skim-gram模型同样包含三层：输入层,映射层和输出层.Skip-Gram模型中的w(t)为输入词,在已知词w(t)的前提下预测词w(t)的上下文w(t-2),w(t-1),w(t+1),w(t+2),条件概率写成：p(context(w)|w)  
-
 ![skip-gram](https://github.com/opprash/braveRL/blob/master/datas/skip_gram.png)
-
